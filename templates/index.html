@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brain Tumor MRI Classifier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+
+    <header class="header">
+      <p class="header__eyebrow">ML PROJECT — YUGANK &middot; CSE AI&ML</p>
+      <h1 class="header__title">
+        Brain Tumor<br />
+        <span class="header__title--accent">MRI Classifier</span>
+      </h1>
+      <p class="header__subtitle">
+        CNN-based diagnostic support system for classifying<br />
+        malignant features in cranial MRI scans.
+      </p>
+    </header>
+
+
+    <main class="main">
+
+
+      <section class="panel panel--upload-row">
+        <p class="panel__label">// input &amp; preview</p>
+
+        <div class="upload-row">
+
+
+          <div class="upload-box" id="uploadBox">
+            <input type="file" id="fileInput" accept="image/*" hidden />
+            <div class="upload-box__inner" id="uploadInner">
+              <svg class="upload-box__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 16V4m0 0L8 8m4-4 4 4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke-linecap="round" />
+              </svg>
+              <span class="upload-box__hint">click to upload</span>
+            </div>
+
+          </div>
+
+
+          <div class="upload-divider"></div>
+
+
+          <div class="preview-box" id="previewBox">
+            <p class="panel__label panel__label--inside">// preview</p>
+            <div class="preview-box__area" id="previewArea">
+              <span class="preview-box__placeholder" id="preview_placeholder">no image selected</span>
+              <img id="previewImg" src="" alt="Scan preview" class="preview-box__img hidden" />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="panel panel--scan">
+        <button class="btn btn--scan" id="scanBtn">
+          <span id="scanLabel">SCAN</span>
+        </button>
+      </section>
+
+
+      <div class="card-row">
+
+
+        <div class="card card--accuracy">
+          <p class="panel__label">// accuracy</p>
+          <div class="accuracy-block">
+            <div class="accuracy-number" id="accuracyNumber">-</div>
+            <div class="accuracy-meta">
+              <div class="accuracy-class" id="accuracyClass">Awaiting scan</div>
+              <div class="accuracy-sublabel">ACCURACY</div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="card card--about">
+          <p class="panel__label">// about</p>
+          <p class="about-text" id="aboutText">
+            --
+          </p>
+          <p class="about-text about-text--muted">
+            Built as an <strong>ML project</strong> exploring high-contrast
+            radiological feature extraction with deep learning. Not a
+            replacement for clinical diagnosis.
+          </p>
+        </div>
+
+      </div>
+
+
+      <section class="panel panel--severity" id="severityPanel">
+        <p class="panel__label">// severity hint</p>
+        <p id="Severity_text">--
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <span>Not a medical device. For research & educational use only.</span>
+    </footer>
+
+  </div>
+  <script src="/static/script.js"></script>
+
+
+</body>
+
+</html>

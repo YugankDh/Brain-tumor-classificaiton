@@ -1,0 +1,26 @@
+{
+  "glioma": {
+    "summary": "Glioma is a type of brain tumor that originates from glial cells, which support and protect neurons. It can occur in different parts of the brain and often shows irregular growth patterns in MRI scans.",
+
+    "severity_hint": "Can range from low-grade to highly aggressive (e.g., glioblastoma)."
+
+  },
+
+  "meningioma": {
+    "summary": "Meningioma is a tumor that arises from the meninges, the protective layers surrounding the brain and spinal cord. It is usually slow-growing and often benign.",
+    "severity_hint": "Most are benign, but some can be atypical or malignant."
+
+  },
+
+  "pituitary": {
+    "summary": "Pituitary tumors develop in the pituitary gland at the base of the brain. They can affect hormone production and may impact nearby structures like the optic nerves.",
+    
+    "severity_hint": "Usually benign but can disrupt hormonal balance significantly."
+  },
+
+  "notumor": {
+    "summary": "No tumor is present. The brain appears structurally normal with no abnormal masses or lesions visible in the MRI scan.",
+    
+    "severity_hint": "Normal condition."
+  }
+}
